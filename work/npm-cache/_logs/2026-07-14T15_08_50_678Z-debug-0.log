@@ -1,0 +1,194 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\User\Documents\Codex\2026-07-14\ge\.npmrc
+5 silly config load:file:C:\Users\User\.npmrc
+6 silly config load:file:C:\Users\User\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" "work\\npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\User\Documents\Codex\2026-07-14\ge\work\npm-cache\_logs\2026-07-14T15_08_50_678Z-
+10 verbose logfile C:\Users\User\Documents\Codex\2026-07-14\ge\work\npm-cache\_logs\2026-07-14T15_08_50_678Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly reify mark retired [
+14 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\react'
+14 silly reify ]
+15 silly reify mark retired [
+15 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\vite',
+15 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.bin\\vite',
+15 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.bin\\vite.cmd',
+15 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.bin\\vite.ps1'
+15 silly reify ]
+16 silly reify mark retired [
+16 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\react-dom'
+16 silly reify ]
+17 silly reify mark retired [
+17 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\lucide-react'
+17 silly reify ]
+18 silly reify mark retired [
+18 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\@vitejs\\plugin-react'
+18 silly reify ]
+19 silly reify moves {
+19 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\react': 'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.react-FhZ12YMm',
+19 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\vite': 'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.vite-Sbs01Uyk',
+19 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.bin\\vite': 'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.bin\\.vite-nj9LR4WA',
+19 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.bin\\vite.cmd': 'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.bin\\.vite.cmd-6lpv9wUq',
+19 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.bin\\vite.ps1': 'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.bin\\.vite.ps1-net0ZgxH',
+19 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\react-dom': 'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.react-dom-Fecrzrut',
+19 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\lucide-react': 'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\.lucide-react-qCQxmuEx',
+19 silly reify   'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\@vitejs\\plugin-react': 'C:\\Users\\User\\Documents\\Codex\\2026-07-14\\ge\\node_modules\\@vitejs\\.plugin-react-Nn6KW0Py'
+19 silly reify }
+20 silly audit bulk request {
+20 silly audit   '@esbuild/aix-ppc64': [ '0.25.12' ],
+20 silly audit   '@esbuild/android-arm': [ '0.25.12' ],
+20 silly audit   '@esbuild/android-arm64': [ '0.25.12' ],
+20 silly audit   '@esbuild/android-x64': [ '0.25.12' ],
+20 silly audit   '@esbuild/darwin-arm64': [ '0.25.12' ],
+20 silly audit   '@esbuild/darwin-x64': [ '0.25.12' ],
+20 silly audit   '@esbuild/freebsd-arm64': [ '0.25.12' ],
+20 silly audit   '@esbuild/freebsd-x64': [ '0.25.12' ],
+20 silly audit   '@esbuild/linux-arm': [ '0.25.12' ],
+20 silly audit   '@esbuild/linux-arm64': [ '0.25.12' ],
+20 silly audit   '@esbuild/linux-ia32': [ '0.25.12' ],
+20 silly audit   '@esbuild/linux-loong64': [ '0.25.12' ],
+20 silly audit   '@esbuild/linux-mips64el': [ '0.25.12' ],
+20 silly audit   '@esbuild/linux-ppc64': [ '0.25.12' ],
+20 silly audit   '@esbuild/linux-riscv64': [ '0.25.12' ],
+20 silly audit   '@esbuild/linux-s390x': [ '0.25.12' ],
+20 silly audit   '@esbuild/linux-x64': [ '0.25.12' ],
+20 silly audit   '@esbuild/netbsd-arm64': [ '0.25.12' ],
+20 silly audit   '@esbuild/netbsd-x64': [ '0.25.12' ],
+20 silly audit   '@esbuild/openbsd-arm64': [ '0.25.12' ],
+20 silly audit   '@esbuild/openbsd-x64': [ '0.25.12' ],
+20 silly audit   '@esbuild/openharmony-arm64': [ '0.25.12' ],
+20 silly audit   '@esbuild/sunos-x64': [ '0.25.12' ],
+20 silly audit   '@esbuild/win32-arm64': [ '0.25.12' ],
+20 silly audit   '@esbuild/win32-ia32': [ '0.25.12' ],
+20 silly audit   '@esbuild/win32-x64': [ '0.25.12' ],
+20 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-android-arm64': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-darwin-arm64': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-darwin-x64': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-freebsd-x64': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-loong64-musl': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-ppc64-musl': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-openbsd-x64': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.62.2' ],
+20 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.62.2' ],
+20 silly audit   '@types/estree': [ '1.0.9' ],
+20 silly audit   esbuild: [ '0.25.12' ],
+20 silly audit   fdir: [ '6.5.0' ],
+20 silly audit   fsevents: [ '2.3.3' ],
+20 silly audit   'lucide-react': [ '0.468.0' ],
+20 silly audit   nanoid: [ '3.3.16' ],
+20 silly audit   picocolors: [ '1.1.1' ],
+20 silly audit   picomatch: [ '4.0.5' ],
+20 silly audit   postcss: [ '8.5.19' ],
+20 silly audit   react: [ '19.2.7' ],
+20 silly audit   'react-dom': [ '19.2.7' ],
+20 silly audit   rollup: [ '4.62.2' ],
+20 silly audit   scheduler: [ '0.27.0' ],
+20 silly audit   'source-map-js': [ '1.2.1' ],
+20 silly audit   tinyglobby: [ '0.2.17' ],
+20 silly audit   vite: [ '6.4.3' ]
+20 silly audit }
+21 http cache tinyglobby@https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz 0ms (cache hit)
+22 http cache scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz 0ms (cache hit)
+23 http cache source-map-js@https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz 0ms (cache hit)
+24 http cache postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.19.tgz 0ms (cache hit)
+25 http cache picomatch@https://registry.npmjs.org/picomatch/-/picomatch-4.0.5.tgz 0ms (cache hit)
+26 http cache picocolors@https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz 0ms (cache hit)
+27 http cache fdir@https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz 0ms (cache hit)
+28 http cache nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.16.tgz 0ms (cache hit)
+29 http cache rollup@https://registry.npmjs.org/rollup/-/rollup-4.62.2.tgz 0ms (cache hit)
+30 http cache esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz 0ms (cache hit)
+31 http cache @rollup/rollup-win32-x64-gnu@https://registry.npmjs.org/@rollup/rollup-win32-x64-gnu/-/rollup-win32-x64-gnu-4.62.2.tgz 0ms (cache hit)
+32 http cache @rollup/rollup-win32-x64-msvc@https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.62.2.tgz 0ms (cache hit)
+33 http cache @types/estree@https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz 0ms (cache hit)
+34 http cache lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-0.468.0.tgz 0ms (cache hit)
+35 http cache @esbuild/win32-x64@https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.25.12.tgz 0ms (cache hit)
+36 http cache react-dom@https://registry.npmjs.org/react-dom/-/react-dom-19.2.7.tgz 0ms (cache hit)
+37 silly tarball no local data for tinyglobby@https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz. Extracting by manifest.
+38 silly tarball no local data for scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz. Extracting by manifest.
+39 silly tarball no local data for source-map-js@https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz. Extracting by manifest.
+40 silly tarball no local data for postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.19.tgz. Extracting by manifest.
+41 http cache react@https://registry.npmjs.org/react/-/react-19.2.7.tgz 0ms (cache hit)
+42 silly tarball no local data for picomatch@https://registry.npmjs.org/picomatch/-/picomatch-4.0.5.tgz. Extracting by manifest.
+43 silly tarball no local data for picocolors@https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz. Extracting by manifest.
+44 silly tarball no local data for fdir@https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz. Extracting by manifest.
+45 silly tarball no local data for nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.16.tgz. Extracting by manifest.
+46 http cache vite@https://registry.npmjs.org/vite/-/vite-6.4.3.tgz 0ms (cache hit)
+47 silly tarball no local data for rollup@https://registry.npmjs.org/rollup/-/rollup-4.62.2.tgz. Extracting by manifest.
+48 silly tarball no local data for esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz. Extracting by manifest.
+49 silly tarball no local data for @rollup/rollup-win32-x64-gnu@https://registry.npmjs.org/@rollup/rollup-win32-x64-gnu/-/rollup-win32-x64-gnu-4.62.2.tgz. Extracting by manifest.
+50 silly tarball no local data for @rollup/rollup-win32-x64-msvc@https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.62.2.tgz. Extracting by manifest.
+51 silly tarball no local data for @types/estree@https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz. Extracting by manifest.
+52 silly tarball no local data for lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-0.468.0.tgz. Extracting by manifest.
+53 silly tarball no local data for @esbuild/win32-x64@https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.25.12.tgz. Extracting by manifest.
+54 silly tarball no local data for react-dom@https://registry.npmjs.org/react-dom/-/react-dom-19.2.7.tgz. Extracting by manifest.
+55 silly tarball no local data for react@https://registry.npmjs.org/react/-/react-19.2.7.tgz. Extracting by manifest.
+56 silly tarball no local data for vite@https://registry.npmjs.org/vite/-/vite-6.4.3.tgz. Extracting by manifest.
+57 http fetch GET 200 https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz 177ms (cache miss)
+58 http fetch GET 200 https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz 195ms (cache miss)
+59 http fetch GET 200 https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz 203ms (cache miss)
+60 http fetch GET 200 https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz 200ms (cache miss)
+61 http fetch GET 200 https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz 217ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz 223ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/picomatch/-/picomatch-4.0.5.tgz 240ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz 267ms (cache miss)
+65 http fetch GET 200 https://registry.npmjs.org/nanoid/-/nanoid-3.3.16.tgz 270ms (cache miss)
+66 http fetch GET 200 https://registry.npmjs.org/react/-/react-19.2.7.tgz 284ms (cache miss)
+67 http fetch GET 200 https://registry.npmjs.org/postcss/-/postcss-8.5.19.tgz 341ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/rollup/-/rollup-4.62.2.tgz 400ms (cache miss)
+69 http fetch GET 200 https://registry.npmjs.org/vite/-/vite-6.4.3.tgz 393ms (cache miss)
+70 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 455ms
+71 silly audit report {}
+72 http fetch GET 200 https://registry.npmjs.org/react-dom/-/react-dom-19.2.7.tgz 759ms (cache miss)
+73 http fetch GET 200 https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.62.2.tgz 766ms (cache miss)
+74 http fetch GET 200 https://registry.npmjs.org/@rollup/rollup-win32-x64-gnu/-/rollup-win32-x64-gnu-4.62.2.tgz 870ms (cache miss)
+75 http fetch GET 200 https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.25.12.tgz 1865ms (cache miss)
+76 http fetch GET 200 https://registry.npmjs.org/lucide-react/-/lucide-react-0.468.0.tgz 5947ms (cache miss)
+77 info run esbuild@0.25.12 postinstall node_modules/esbuild node install.js
+78 info run esbuild@0.25.12 postinstall { code: 0, signal: null }
+79 silly ADD node_modules/tinyglobby
+80 silly ADD node_modules/source-map-js
+81 silly ADD node_modules/scheduler
+82 silly ADD node_modules/rollup
+83 silly ADD node_modules/postcss
+84 silly ADD node_modules/picomatch
+85 silly ADD node_modules/picocolors
+86 silly ADD node_modules/nanoid
+87 silly ADD node_modules/fdir
+88 silly ADD node_modules/esbuild
+89 silly ADD node_modules/@types/estree
+90 silly ADD node_modules/@rollup/rollup-win32-x64-msvc
+91 silly ADD node_modules/@rollup/rollup-win32-x64-gnu
+92 silly ADD node_modules/@esbuild/win32-x64
+93 silly REMOVE node_modules/@vitejs/plugin-react
+94 silly CHANGE node_modules/lucide-react
+95 silly CHANGE node_modules/react-dom
+96 silly CHANGE node_modules/vite
+97 silly CHANGE node_modules/react
+98 verbose cwd C:\Users\User\Documents\Codex\2026-07-14\ge
+99 verbose os Windows_NT 10.0.26200
+100 verbose node v24.14.0
+101 verbose npm  v11.9.0
+102 verbose exit 0
+103 info ok
