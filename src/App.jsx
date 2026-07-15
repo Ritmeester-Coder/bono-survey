@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Dashboard from "./Dashboard";
 import { questions } from "./question";
+import logo from "./assets/bonosteel-logo-1.png";
 
 const ratings = [
   { value: 1, label: "Excellent", tone: "excellent" },
@@ -246,7 +247,7 @@ function App() {
         >
           <div className="image-container">
             <img
-              src="./dist/assets/bonosteel-logo-1.png"
+              src={logo}
               alt="Bono Steel Logo"
               height={150}
               className="brand-logo p-20"
