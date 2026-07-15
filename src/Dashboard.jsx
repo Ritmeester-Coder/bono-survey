@@ -78,10 +78,6 @@ export default function Dashboard({ setView }) {
       </button>
       <h1>Bono Steel Dashboard</h1>
 
-      <button className="secondary-button" onClick={() => setView("survey")}>
-        Back to Survey
-      </button>
-
       <hr />
 
       <div className="dashboard-cards">

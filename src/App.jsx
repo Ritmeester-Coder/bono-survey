@@ -36,7 +36,6 @@ function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showLogin, setShowLogin] = useState(false);
-  const [loggedIn, setLoggedIn] = useState(false);
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
   const [details, setDetails] = useState({
@@ -114,42 +113,35 @@ function App() {
   }
 
   async function saveSurvey() {
-    // Calculate average score
     const rated = answers.filter((a) => a.rating);
 
     const average =
       rated.reduce((sum, a) => sum + Number(a.rating), 0) / rated.length;
 
-    // Save survey header
-    const { data: survey, error: surveyError } = await supabase
-      .from("surveys")
-      .insert([
-        {
-          company: details.company,
-          name: details.name,
-          bono_contact: details.bonoContact,
-          survey_date: details.date,
-          average_score: average,
-        },
-      ])
-      .select()
-      .single();
+    const result = await supabase.rpc("submit_survey", {
+      p_company: details.company,
+      p_name: details.name,
+      p_bono_contact: details.bonoContact,
+      p_survey_date: details.date,
+      p_average_score: average,
+      p_answers: answers.map((answer, index) => ({
+        question_number: index + 1,
+        rating: Number(answer.rating),
+        comment: answer.comment,
+      })),
+    });
 
-    if (surveyError) throw surveyError;
+    const { error } = result;
 
-    // Save every answer
-    const answerRows = answers.map((answer, index) => ({
-      survey_id: survey.id,
-      question_number: index + 1,
-      rating: Number(answer.rating),
-      comment: answer.comment,
-    }));
+    if (error) {
+      console.error("RPC Error:", error);
+      throw error;
+    }
 
-    const { error: answerError } = await supabase
-      .from("survey_answers")
-      .insert(answerRows);
-
-    if (answerError) throw answerError;
+    if (error) {
+      console.error(error);
+      throw error;
+    }
   }
 
   function resetSurvey() {
@@ -173,13 +165,13 @@ function App() {
       data: { session },
     } = await supabase.auth.getSession();
 
-    if (view === "dashboard" && session) {
-      return <Dashboard setView={setView} />;
+    if (session) {
+      setView("dashboard");
     }
   }
 
   async function login() {
-    const { error } = await supabase.auth.signInWithPassword({
+    const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
@@ -191,9 +183,7 @@ function App() {
     }
 
     setShowLogin(false);
-    if (view === "dashboard" && session) {
-      return <Dashboard setView={setView} />;
-    }
+    setView("dashboard"); // <-- THIS is what you want
   }
 
   if (view === "dashboard") {
@@ -490,23 +480,6 @@ function App() {
                 expectations.
               </p>
               <div className="submitted-actions">
-                <button
-                  className="primary-button"
-                  type="button"
-                  onClick={downloadResponse}
-                >
-                  <Download size={18} />
-                  <span>Download Response</span>
-                </button>
-                <a
-                  className="secondary-button link-button"
-                  href={`mailto:?subject=Bono Steel Customer Survey - ${encodeURIComponent(details.company)}&body=${encodeURIComponent(
-                    JSON.stringify(payload, null, 2),
-                  )}`}
-                >
-                  <Mail size={18} />
-                  <span>Email Response</span>
-                </a>
                 <button
                   className="ghost-button"
                   type="button"
