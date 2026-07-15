@@ -23,3 +23,7 @@ Import this folder as a Vercel project. Vercel will detect Vite automatically.
 - Output directory: `dist`
 
 The current submission flow downloads or emails a JSON response from the browser. Connect a form endpoint or database later if you want hosted response collection.
+
+## Supabase DB Passworc
+
+B0n0$t33l2026
