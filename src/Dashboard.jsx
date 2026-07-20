@@ -62,7 +62,6 @@ export default function Dashboard({ setView }) {
       .select("*")
       .eq("survey_id", survey.id)
       .order("question_number");
-
     if (error) {
       console.error(error);
       return;
@@ -114,6 +113,7 @@ export default function Dashboard({ setView }) {
           <tr>
             <th align="left">Company</th>
             <th align="left">Customer</th>
+            <th align="left">Bono Contact</th>
             <th align="left">Average</th>
             <th align="left">Date</th>
             <th></th>
@@ -129,6 +129,7 @@ export default function Dashboard({ setView }) {
               <tr key={survey.id}>
                 <td>{survey.company}</td>
                 <td>{survey.name}</td>
+                <td>{survey.bono_contact}</td>
                 <td>{survey.average_score}</td>
                 <td>{survey.survey_date}</td>
                 <td>
@@ -153,6 +154,9 @@ export default function Dashboard({ setView }) {
 
             <p>
               <strong>Customer:</strong> {selectedSurvey.name}
+            </p>
+            <p>
+              <strong>Contact:</strong> {selectedSurvey.bono_contact}
             </p>
 
             <p>
